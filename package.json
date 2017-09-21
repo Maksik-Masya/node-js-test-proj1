@@ -1,0 +1,27 @@
+{
+  "name": "node-js-test-proj1",
+  "version": "1.0.0",
+  "description": "Learning NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "webpack && node index.js",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maksik-Masya/node-js-test-proj1.git"
+  },
+  "author": "Max",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maksik-Masya/node-js-test-proj1/issues"
+  },
+  "homepage": "https://github.com/Maksik-Masya/node-js-test-proj1#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "webpack": "^3.6.0"
+  }
+}
