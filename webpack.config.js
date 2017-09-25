@@ -18,7 +18,15 @@ module.exports = {
                         presets: ['es2015']
                     }
                 }
-            }
+            },
+            {
+                enforce: "pre",
+                test: /\.js$/,
+                options: {
+                    configFile: __dirname + '/.eslintrc.js',
+                },
+                loader: "eslint-loader",
+            },
         ]
     }
 };

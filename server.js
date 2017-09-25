@@ -3,17 +3,17 @@ const url = require('url');
 
 
 function start(route, handle) {
-	function onRequest(request, response) {
-		let pathname = url.parse(request.url).pathname;
+  function onRequest(request, response) {
+    const pathname = url.parse(request.url).pathname;
 
-		console.log('Request for ' + pathname + ' received');
-		
-        route(handle, pathname, response);
-	}	
+    console.warn(`Request for ${pathname} received`);
 
-	http.createServer(onRequest).listen(3000);
+    route(handle, pathname, response);
+  }
 
-	console.log('Server has started');
+  http.createServer(onRequest).listen(3000);
+
+  console.warn('Server has started');
 }
 
 
